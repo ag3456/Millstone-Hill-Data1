@@ -1,9 +1,8 @@
-function plottingfunction(propertime, range, matrix, totype)
+function plottingfunction(propertime, range, matrix)
 
 figure(1)
 surface(propertime, range ,matrix)
 ylabel('Altitude (km)')
-title(totype)
 ylim([min(range) max(range)]);
 xlim([min(propertime) max(propertime)]);
 colormap 
