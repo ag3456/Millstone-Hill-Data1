@@ -67,7 +67,7 @@ if (nargin == 5) %only if user specifies that a specific time and range is neede
     TID = TID((index1:index2),(fromdate:todate));
     propertime = propertime(fromdate:todate);
 
-elseif((nargin == 4) & class((varargin{1} == 'datetime')))
+elseif((nargin == 4) & class((varargin{1} == 'datetime'))) %return the matrix for the interval only if you include time interval for the entire range
   
     d = varargin{1};
     p = varargin{2};
@@ -89,7 +89,7 @@ elseif((nargin == 4) & class((varargin{1} == 'datetime')))
     TID = TID(:,(fromdate:todate));
     propertime = propertime(fromdate:todate);
 
-elseif((nargin == 3) & class((varargin{1}(1)) == 'double'))
+elseif((nargin == 3) & class((varargin{1}(1)) == 'double')) %return the matrix for the specific range for all time stamps if time stamps is not included 
    
     fromrange = varargin{1}(1);
     torange = varargin{1}(2);
