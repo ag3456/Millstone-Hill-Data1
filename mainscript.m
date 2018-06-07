@@ -1,0 +1,2 @@
+[propertime, range, matrix, TID] = returnmatrix('/Users/ashakigumbs/Documents/MATLAB/Research_Semeter_Group/madmatlab/Zenith+single-pulse+basic+parameters.hdf5', 'ne');
+plottingfunction(propertime, range, matrix)
