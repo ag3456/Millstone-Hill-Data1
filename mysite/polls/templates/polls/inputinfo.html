@@ -1,0 +1,7 @@
+<h1>Boston University Center for Space Physics</h1>
+
+<form action="/polls/" method="post">
+    {% csrf_token %}
+    {{ form }}
+    <input type="submit" value="Submit" />
+</form>
